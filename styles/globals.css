@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier Prime", "Quicksand", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+:root {
+  font-size: 10px;
+  --yellow: #e8ff00;
+  --green: rgb(52, 211, 153);
+  --purple: rgb(124, 58, 237);
+  --black: #000;
+  --white: #fff;
+  --bgc: #f6f7f8;
+}
+html,
+body {
+  background-color: var(--purple);
+  width: 100%;
+  max-width: 100%;
+}
+.box {
+  width: 100%;
+  max-width: 1450px;
+  padding: 0 3.5rem;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.cursive {
+  font-family: "Press Start 2P", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.section {
+  padding: 7.5rem 0;
+  width: 100%;
+}
+button {
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+}
+.button {
+  color: var(--white);
+  background-color: var(--green);
+  font-size: 2rem;
+  padding: 1.5rem 3.5rem;
+  font-weight: 600;
+  box-shadow: 3px 3px 0 var(--white);
+  transition: 0.5s;
+  border: 2px dashed var(--white);
+}
+.button:hover {
+  box-shadow: 0 0 0 var(--white);
+  transform: translate(3px, 3px);
+}
+.marquee-container img {
+  width: 25rem;
+}
+.activeGIF {
+  border-color: var(--purple) !important;
+}
+.CHB {
+  display: none !important;
+  border: 0.75rem solid var(--purple);
+  width: 75%;
+  min-width: 400px;
+  position: relative;
+}
+.CHB.activeCHB {
+  display: block !important;
+}
+@media screen and (max-width: 1000px) {
+  .CHB {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .marquee-container img {
+    width: 15rem;
+  }
+  .CHB {
+    width: 100%;
+    min-width: unset;
+  }
+  .box {
+    padding: 0 1.5rem;
+  }
+}

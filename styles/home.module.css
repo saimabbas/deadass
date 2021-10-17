@@ -1,0 +1,470 @@
+.hero {
+  width: 100%;
+  min-height: calc(100vh - 8.5rem);
+  background-color: var(--purple);
+  position: relative;
+  overflow: hidden;
+}
+.mint {
+  width: 100%;
+  min-height: calc(100vh - 8.5rem);
+  background-color: var(--purple);
+  position: relative;
+  overflow: hidden;
+}
+.rarity {
+  width: 100%;
+  background-color: var(--purple);
+  position: relative;
+  overflow: hidden;
+}
+.hero .box {
+  height: 100%;
+}
+.heroContent {
+  width: 100%;
+  height: 100%;
+  padding: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 10;
+  position: relative;
+}
+.heroContent h2 {
+  font-size: 6rem;
+  color: var(--white);
+  text-align: center;
+  text-shadow: 3px 3px var(--green);
+}
+.heroContent h3 {
+  font-size: 3.25rem;
+  color: var(--green);
+  text-align: center;
+  margin: 2.5rem 0 5rem 0;
+}
+.heroContent h5 {
+  font-size: 3rem;
+  color: var(--green);
+  text-align: center;
+}
+.heroContent h4 {
+  font-size: 3.75rem;
+  color: var(--white);
+  text-align: center;
+  text-shadow: 2px 2px var(--green);
+}
+.heroContent main {
+  margin: 5rem 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.heroImg {
+  width: 85%;
+  height: 85%;
+  object-fit: contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 5%;
+  z-index: 0;
+  filter: saturate(0);
+}
+.corner3 {
+  height: 30rem;
+  object-fit: contain;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transition: 0.5s;
+  z-index: 15;
+}
+.corner3:hover {
+  transform: scale(1.5) rotate(5deg);
+}
+.corner4 {
+  height: 30rem;
+  object-fit: contain;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s;
+  z-index: 15;
+}
+.corner4:hover {
+  transform: scale(1.5) rotate(-5deg);
+}
+.explore {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: var(--green);
+  white-space: nowrap;
+  cursor: pointer;
+}
+.explore span {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 1px solid var(--green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: var(--green);
+  margin: 1rem 0 0 0;
+  transition: 0.5s;
+}
+.explore:hover > span {
+  background-color: var(--green);
+  color: var(--white);
+}
+/* Pictures Grid Section */
+.grid {
+  width: 100%;
+  padding: 7.5rem 0;
+  background-color: var(--green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gridContent {
+  width: 100%;
+  height: 100%;
+  max-width: 1450px;
+  padding: 0 3.5rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 625px 1fr;
+  grid-template-rows: auto;
+  grid-gap: 0;
+}
+.gridLeft {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 3.5rem;
+}
+.gridLeft img {
+  width: 100%;
+  object-fit: cover;
+  border: 0.75rem solid transparent;
+  cursor: pointer;
+}
+.gridLeft img:hover {
+  border: 0.75rem solid rgba(255, 255, 255, 0.5);
+}
+.gridRight {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+}
+.gridRight h2 {
+  font-size: 2rem;
+  color: var(--white);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0rem);
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(121, 69, 69, 0.65);
+}
+.gridRight img {
+  width: 100%;
+  object-fit: cover;
+}
+/* Banner */
+.banner {
+  padding: 7.5rem 0;
+  width: 100%;
+  background-color: var(--purple);
+  position: relative;
+}
+.bannerCorner1 {
+  height: 20rem;
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.bannerCorner1:hover {
+  transform: scale(1.5) rotate(-5deg);
+}
+.bannerCorner2 {
+  height: 20rem;
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: 0.5s;
+}
+.bannerCorner2:hover {
+  transform: scale(1.5) rotate(5deg);
+}
+.bannerContent {
+  width: 100%;
+  max-width: 850px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  z-index: 10;
+  position: relative;
+}
+.bannerContent h2 {
+  font-size: 3.5rem;
+  color: var(--white);
+  text-align: center;
+  text-shadow: 2px 2px 0 var(--green);
+}
+.bannerContent h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--white);
+  margin: 3.5rem 0;
+  text-align: center;
+}
+/* Roadmap Section */
+.roadmap {
+  width: 100%;
+  background-color: var(--green);
+  position: relative;
+  overflow: hidden;
+}
+.roadmapHero {
+  height: 85%;
+  object-fit: contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 10%;
+  z-index: 0;
+  filter: saturate(0);
+}
+.roadmapContent {
+  padding: 7.5rem 0;
+  max-width: 850px;
+  width: 100%;
+  margin: 0 auto;
+}
+.roadmapHead h2 {
+  font-size: 3.5rem;
+  color: var(--white);
+  text-shadow: 3px 3px 0 var(--purple);
+}
+.roadmapHead {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.roadmapHead img {
+  width: 3.5rem;
+  height: 3.5rem;
+  object-fit: contain;
+  margin: 0 0 0 1.5rem;
+}
+.roadmapBox {
+  width: 100%;
+  margin: 7.5rem 0 0 0;
+  padding: 2.5rem 2.5rem;
+  background-color: var(--purple);
+  position: relative;
+}
+.roadmapBox img.roadmapImg1 {
+  width: 5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: saturate(0);
+  opacity: 15%;
+}
+.roadmapBox img.roadmapImg3 {
+  width: 5rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  filter: saturate(0);
+  opacity: 15%;
+}
+.roadmapBox img.roadmapImg2 {
+  width: 5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  filter: saturate(0);
+  opacity: 15%;
+}
+.roadmapBox img.roadmapImg4 {
+  width: 5rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  filter: saturate(0);
+  opacity: 15%;
+}
+.roadmapBox h3 {
+  font-size: 2.75rem;
+  color: var(--white);
+  margin: 0 0 1.5rem 0;
+}
+.roadmapBox ul {
+  padding: 0 0 0 2rem;
+}
+.roadmapBox ul li {
+  margin: 0 0 0.75rem 0;
+  font-size: 1.75rem;
+  color: var(--white);
+}
+.roadmapBox {
+  border: 2px dashed white;
+}
+.marquee {
+  background-color: var(--green);
+}
+.footer {
+  font-size: 1.5rem;
+  width: 100%;
+  color: var(--white);
+  padding: 2.5rem 0;
+  background-color: var(--green);
+  text-align: center;
+}
+.heroContent img {
+  width: 100%;
+}
+.rarity .heroContent {
+  padding: 5rem 0;
+}
+@media screen and (max-width: 1200px) {
+  .gridLeft {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+  .gridContent {
+    grid-template-columns: 425px 1fr;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .gridContent {
+    grid-template-columns: 1fr;
+    grid-gap: 5rem;
+  }
+  .gridLeft {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1.5rem;
+  }
+  .gridLeft img {
+    border: 0.5rem solid transparent;
+  }
+  .gridLeft img:hover {
+    border: 0.5rem solid rgba(255, 255, 255, 0.5);
+  }
+}
+@media screen and (max-width: 750px) {
+  .gridLeft {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 1.5rem;
+  }
+  .roadmapHero {
+    height: 85%;
+    width: 85%;
+  }
+  .gridContent {
+    padding: 0 1.5rem;
+    grid-gap: 2.5rem;
+  }
+  .grid {
+    padding: 5rem 0;
+  }
+  .heroContent {
+    padding: 10rem 0;
+  }
+  .heroContent h2 {
+    font-size: 3.25rem;
+    text-shadow: 2px 2px var(--green);
+  }
+  .roadmapBox {
+    margin: 2.5rem 0 0 0;
+    padding: 1.5rem;
+  }
+  .heroContent h3 {
+    font-size: 2.75rem;
+    margin: 5rem 0;
+  }
+  .bannerCorner1 {
+    height: 10rem;
+    filter: saturate(0) opacity(0.25);
+  }
+  .bannerCorner2 {
+    height: 10rem;
+    filter: saturate(0) opacity(0.25);
+  }
+  .roadmapContent {
+    padding: 5rem 0;
+  }
+  .banner {
+    padding: 3.5rem 0;
+  }
+  .corner4 {
+    height: 15rem;
+  }
+  .corner3 {
+    height: 15rem;
+  }
+  .bannerContent h2 {
+    font-size: 3rem;
+  }
+  .roadmapHead h2 {
+    font-size: 3rem;
+  }
+  .explore {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--green);
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  .hero {
+    min-height: 75vh;
+  }
+  .mint {
+    min-height: 100vh;
+  }
+  .heroContent h4 {
+    font-size: 2.5rem;
+  }
+  .heroContent h5 {
+    font-size: 2.25rem;
+  }
+}

@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import Header from "../components/header";
 import st from "./../styles/home.module.css";
 import Head from "next/head";
+import Link from "next/link";
 import { MdOutlineSouth } from "react-icons/md";
 
 import Marquee from "react-fast-marquee";
@@ -158,7 +159,9 @@ const Home = () => {
           <div className={st.heroContent}>
             <h2>The original Auto Generated Ass NFTs Project</h2>
             <h3>6969 Unique Asses in total</h3>
-            <button className="button">Rarities</button>
+            <Link href="/mint">
+              <button className="button">MINT NOW!</button>
+            </Link>
           </div>
         </div>
       </div>
@@ -241,51 +244,51 @@ const Home = () => {
           </div>
           <div className={st.gridRight}>
             <div className="CHB CHB1 activeCHB">
-              <h2>Ass Name will go here1</h2>
+              <h2>BBL Ass</h2>
               <img src="./assets/gif1.gif" alt="" />
             </div>
             <div className="CHB CHB2">
-              <h2>Ass Name will go here2</h2>
+              <h2>Bubble Ass</h2>
               <img src="./assets/gif2.gif" alt="" />
             </div>
             <div className="CHB CHB3">
-              <h2>Ass Name will go here3</h2>
+              <h2>Flat Ass</h2>
               <img src="./assets/gif3.gif" alt="" />
             </div>
             <div className="CHB CHB4">
-              <h2>Ass Name will go here4</h2>
+              <h2>Mens Ass</h2>
               <img src="./assets/gif4.gif" alt="" />
             </div>
             <div className="CHB CHB5">
-              <h2>Ass Name will go here5</h2>
+              <h2>Flat Mens Ass</h2>
               <img src="./assets/gif5.gif" alt="" />
             </div>
             <div className="CHB CHB6">
-              <h2>Ass Name will go here6</h2>
+              <h2>Muscle Ass</h2>
               <img src="./assets/gif6.gif" alt="" />
             </div>
             <div className="CHB CHB7">
-              <h2>Ass Name will go here7</h2>
+              <h2>Thick Ass</h2>
               <img src="./assets/gif7.gif" alt="" />
             </div>
             <div className="CHB CHB8">
-              <h2>Ass Name will go here8</h2>
+              <h2>Piggy Ass</h2>
               <img src="./assets/gif8.gif" alt="" />
             </div>
             <div className="CHB CHB9">
-              <h2>Ass Name will go here9</h2>
+              <h2>Ape Ass</h2>
               <img src="./assets/gif9.gif" alt="" />
             </div>
             <div className="CHB CHB10">
-              <h2>Ass Name will go here10</h2>
+              <h2>Flat Zombie Ass</h2>
               <img src="./assets/gif10.gif" alt="" />
             </div>
             <div className="CHB CHB11">
-              <h2>Ass Name will go here11</h2>
+              <h2>BBL Zombie Ass</h2>
               <img src="./assets/gif11.gif" alt="" />
             </div>
             <div className="CHB CHB12">
-              <h2>Ass Name will go here12</h2>
+              <h2>Custom 1/1 Ass</h2>
               <img src="./assets/gif12.gif" alt="" />
             </div>
           </div>
@@ -302,7 +305,9 @@ const Home = () => {
               Million Variations 6969 have been generated and deployed on chain.
               Click the button below to check some of them.
             </h3>
-            <button className="button">Rarity Chart</button>
+            <Link href="/rarity">
+              <button className="button">Rarity Chart</button>
+            </Link>
           </div>
         </div>
       </div>
@@ -389,6 +394,22 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <div className={st.banner + " " + st.breadz} id="section3">
+        <img className={st.roadmapHero} src="./assets/breadz.jpeg" alt="" />
+        <div className="box">
+          <div className={st.bannerContent}>
+            <h2>Bread Boyz Coming Soon!</h2>
+            {/* <h3>
+              10+ body types, and 200+ attributes which could create over 2
+              Million Variations 6969 have been generated and deployed on chain.
+              Click the button below to check some of them.
+            </h3> */}
+            <a href="https://www.breadz.io/Home">
+              <button className="button">Visit Breadz.io</button>
+            </a>
+          </div>
+        </div>
+      </div>
       {/* Marquee */}
       <div className={st.marquee}>
         <div className="box">
@@ -400,26 +421,25 @@ const Home = () => {
               speed={100}
               gradientWidth={50}
             >
-              <img src="./assets/1.png" alt="" />
-              <img src="./assets/2.png" alt="" />
-              <img src="./assets/3.png" alt="" />
-              <img src="./assets/4.png" alt="" />
-              <img src="./assets/5.png" alt="" />
-              <img src="./assets/6.png" alt="" />
-              <img src="./assets/7.png" alt="" />
-              <img src="./assets/8.png" alt="" />
-              <img src="./assets/9.png" alt="" />
-              <img src="./assets/10.png" alt="" />
+              <img src="./assets/sp1.png" alt="" />
+              <img src="./assets/sp2.png" alt="" />
+              <img src="./assets/sp3.png" alt="" />
+              <img src="./assets/sp4.png" alt="" />
+              <img src="./assets/sp5.png" alt="" />
+              <img src="./assets/sp6.png" alt="" />
+              <img src="./assets/sp7.png" alt="" />
+              <img src="./assets/sp8.png" alt="" />
+              <img src="./assets/sp9.png" alt="" />
+              <img src="./assets/sp10.png" alt="" />
             </Marquee>
           </div>
         </div>
       </div>
+
       {/* Footer */}
       <div className={st.footer}>
         <div className="box">
-          <p>
-            Copyright © 2021 Deadass. All Rights Reserved.
-          </p>
+          <p>Copyright © 2021 Deadass. All Rights Reserved.</p>
         </div>
       </div>
     </div>

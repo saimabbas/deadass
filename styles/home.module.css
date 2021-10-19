@@ -174,10 +174,10 @@
   position: relative;
 }
 .gridRight h2 {
-  font-size: 2rem;
+  font-size: 2.75rem;
   color: var(--white);
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 50%;
   transform: translate(-50%, 0rem);
   width: 100%;
@@ -356,6 +356,12 @@
 }
 .rarity .heroContent {
   padding: 5rem 0;
+}
+.breadz {
+  margin: 0 0 5rem 0;
+}
+.breadz h2 {
+  margin: 0 0 5rem 0;
 }
 @media screen and (max-width: 1200px) {
   .gridLeft {

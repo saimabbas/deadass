@@ -29,9 +29,11 @@ const Header = (props) => {
           <div className={st.headerRight}>
             {props.showLinks ? (
               <>
-                <span onClick={props.moveTo2}>GRID</span>
-                <span onClick={props.moveTo3}>RARITY CHART</span>
+                <span onClick={props.moveTo2}>ASSGRID</span>
                 <span onClick={props.moveTo4}>ASSMAP</span>
+                <Link href="/rarity">
+                  <span onClick={props.moveTo3}>RARITY CHART</span>
+                </Link>
               </>
             ) : null}
             <a
